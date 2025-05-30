@@ -1,0 +1,32 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Java
+*.class
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# VSCode (optional, if someone uses it too)
+.vscode/
