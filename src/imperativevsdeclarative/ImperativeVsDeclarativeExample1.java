@@ -18,7 +18,8 @@ public class ImperativeVsDeclarativeExample1 {
         /** * Declarative programming: Focus on the result rather than the steps to achieve it.
          * Example: Calculate the sum of even numbers from 1 to 10 using a functional approach.
          */
-        int sum1 = IntStream.rangeClosed(1, 101)
+        int sum1 = IntStream.rangeClosed(1, 101) // it splits the range into 1 to 100
+                .parallel()
                 .sum();
         System.out.println("Declarative Sum of even numbers from 1 to 100: " + sum1);
     }
