@@ -33,5 +33,20 @@ This repository is a curated collection of hands-on examples and feature demonst
 
 ---
 
-## 🗂️ Directory Structure
 
+---
+
+## 🛠️ Prerequisites
+
+- JDK 8 to 21 installed (use SDKMAN or `jenv` to manage multiple versions)
+- Maven or Gradle (optional, depending on examples)
+- An IDE like IntelliJ IDEA, Eclipse, or VSCode
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository
+   ```bash
+   git clone git@github.com:pratappadhy2005/mastering_java_8_to_21.git
+   cd mastering_java_8_to_21
