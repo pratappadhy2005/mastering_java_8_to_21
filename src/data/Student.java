@@ -46,6 +46,10 @@ public class Student {
         return gpa;
     }
 
+    public void printActivities() {
+        System.out.println("Activities: " + activities);
+    }
+
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
