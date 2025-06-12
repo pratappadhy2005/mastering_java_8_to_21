@@ -9,10 +9,10 @@ public class ConstructorRefExample {
 
     static Supplier<Student> studentSupplier = Student::new;
 
-    static Function<Student, String> studentNameFunction = Student::getName;
+    static Function<String, Student> studentNameFunction = Student::new;
 
     public static void main(String[] args) {
         System.out.println(studentSupplier.get());
-        System.out.println(studentNameFunction.apply(new Student("John Doe")));
+        System.out.println(studentNameFunction.apply("John Doe"));
     }
 }
