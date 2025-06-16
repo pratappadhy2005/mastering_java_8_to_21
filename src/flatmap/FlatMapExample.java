@@ -15,5 +15,10 @@ public class FlatMapExample {
                 .flatMap(student -> student.getActivities().stream())
                 .collect(Collectors.toSet());
         System.out.println(activityList);
+
+        // Method to calculate the total number of activities
+        final long totalActivities = studentList.stream()
+                .flatMap(student -> student.getActivities().stream())
+                .count();
     }
 }
