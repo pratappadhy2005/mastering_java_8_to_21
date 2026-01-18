@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class FucntionStudentExample {
+public class FunctionStudentExample {
 
     static Predicate<Student> gpaPredicate = student -> student.getGpa() >= 3.5;
     static Function<List<Student>, Map<String, Double>> studentNameAndGpaFunction = students -> {
