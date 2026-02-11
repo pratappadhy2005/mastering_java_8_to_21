@@ -16,10 +16,13 @@ public class StreamExample {
 
         // student name and their activity in a map
         Map<String, List<String>> studentMap = StudentDataBase.getAllStudents()
-                //.stream()
-                .parallelStream()
+                .stream()
+                //.parallelStream()
+                .peek((s) -> System.out.println("Before Filter: " + s))
                 .filter(studentPredicate)
+                .peek((s) -> System.out.println("After Grade Level Filter: " + s))
                 .filter(studentGPAPredicate)
+                .peek((s) -> System.out.println("After GPA Filter: " + s))
                 .collect(Collectors.toMap(
                         Student::getName,
                         Student::getActivities
